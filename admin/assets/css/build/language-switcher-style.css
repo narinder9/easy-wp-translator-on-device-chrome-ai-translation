@@ -1,0 +1,197 @@
+.ewt-main-wrapper{
+    --ewt-flag-radius: 0px;
+    --ewt-flag-ratio: 4/3;
+    --ewt-normal-bg-color: #fff;
+    --ewt-normal-text-color: #000;
+  }
+  /* General reset */
+  .ewt-language-list,
+  .ewt-language-list li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .ewt-main-wrapper .ewt-language-list{
+    overflow: hidden;
+  }
+  
+  /* Base wrapper */
+  .ewt-main-wrapper {
+      font-family: inherit;
+      font-size: inherit;
+      line-height: 1.5;
+  }
+  
+  .ewt-main-wrapper .ewt-wrapper a{
+    text-decoration: none;
+  }
+  
+  .ewt-main-wrapper .ewt-wrapper.horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  
+  .ewt-main-wrapper .ewt-wrapper.vertical {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  /* Language switcher container */
+  .ewt-wrapper {
+      padding: 10px;
+  }
+  
+  /* Language item styling */
+  .ewt-lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 8px;
+      margin-bottom: 6px;
+      white-space: nowrap;
+      line-height: 1;
+  }
+  
+  .ewt-wrapper.horizontal .ewt-lang-item a,
+  .ewt-wrapper.vertical .ewt-lang-item a{
+    background-color: var(--ewt-normal-bg-color);
+  }
+  
+  
+  .ewt-lang-image{
+    aspect-ratio: var(--ewt-flag-ratio);
+  }
+  
+  /* Flag image styling */
+  .ewt-lang-image img {
+      object-fit: cover;
+      border-radius: var(--ewt-flag-radius);
+  }
+  
+  /* Name, code, and flag inline */
+  .ewt-lang-image,
+  .ewt-lang-name,
+  .ewt-lang-code {
+      display: inline-block;
+      vertical-align: middle;
+      flex-shrink: 0;
+      /* text-transform: capitalize; */
+  }
+  
+  /* Link reset */
+  .ewt-lang-item a,
+  .ewt-active-language a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--ewt-normal-text-color);
+  }
+  
+  /* Active language button (dropdown trigger) */
+  .ewt-active-language {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      padding: 6px 8px;
+      border-radius: 4px;
+      color: var(--ewt-normal-text-color);
+  }
+  
+  /* DROPDOWN STYLING */
+  .ewt-wrapper.dropdown {
+    position: relative;
+    display: inline-flex;
+    margin: 0 auto;
+    padding: 10px 15px;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--ewt-normal-bg-color);
+    overflow: visible;
+    align-items: center;
+  }
+  
+  .ewt-active-language .ewt-dropdown-icon {
+    transition: transform 0.3s ease;
+    display: inline-block;
+  }
+  
+  .ewt-wrapper.dropdown:hover .ewt-dropdown-icon {
+    transform: rotate(180deg);
+  }
+  
+  .ewt-wrapper.dropdown span a{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .ewt-wrapper.dropdown ul {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    right: 0px;
+    
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    list-style: none;
+    opacity: 0;
+    pointer-events: none;
+    padding: 0px;
+    z-index: 999;
+    /* overflow-wrap: anywhere; */
+    display: inline-table;
+    width: 100%;
+  }
+  
+  .ewt-wrapper.dropdown ul li{
+    text-decoration: none;
+    background: var(--ewt-normal-bg-color);
+    display: block
+  }
+  .ewt-wrapper.dropdown li a{
+    color: var(--ewt-normal-text-color);
+    padding: 5px 15px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    white-space: nowrap;
+  }
+  
+  .ewt-dropdown-direction-up .ewt-wrapper.dropdown ul {
+    top: auto;
+    bottom: 100%;
+    justify-content: flex-start;
+  }
+  
+  .ewt-wrapper.dropdown.active::after, .ewt-wrapper.dropdown:hover::after {
+    border-width: 0 6px 6px 6px;
+  }
+  
+  .ewt-wrapper.dropdown.active ul, .ewt-wrapper.dropdown:hover ul {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .ewt_elementor_demo_btn{
+    position: absolute;
+    bottom: 4px;
+    right: 30px;
+    background: #EDACFB;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .ewt_elementor_demo_btn a{
+    color: black;
+  }
+  .ewt_elementor_demo_btn a:hover{
+    color:black;
+    text-decoration: none;
+  }

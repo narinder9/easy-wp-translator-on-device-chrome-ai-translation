@@ -1,0 +1,25 @@
+.ewt-button {
+	padding: 0;
+	height: 20px;
+	background: none;
+	border: none;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.ewt-button:not(.wp-ui-text-highlight) {
+	color: #DDDDDD;
+}
+
+.ewt-button svg {
+	fill: currentColor;
+}
+
+.ewt-before-post-translations-button {
+	float: right;
+	margin: 13px 7px;
+}
+
+.rtl .ewt-before-post-translations-button {
+	float: left;
+}

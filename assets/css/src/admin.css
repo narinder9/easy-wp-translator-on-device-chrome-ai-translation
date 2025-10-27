@@ -1,0 +1,459 @@
+/* languages admin panel */
+#add-lang select {
+	width: 95%;
+}
+
+#add-lang label {
+	margin: 0.35em 0 0.5em;
+}
+
+.ewt-legend {
+	display: block;
+	padding: 2px 0;
+	color: #1d2327;
+	font-weight: 400;
+	text-shadow: none;
+	margin: 0.35em 0 0.5em;
+}
+
+.column-locale,
+.languages .column-slug {
+	width : 15%
+}
+
+.column-default_lang {
+	width : 5%;
+}
+
+.column-term_group,
+.column-flag, .column-count {
+	width : 10%;
+}
+
+td.column-default_lang .icon-default-lang:before,
+.ewt-wizard-content .icon-default-lang:before {
+	font-family: 'dashicons';
+	content: "\f155";
+}
+
+.ewt-icon:before{
+	display: inline-block;
+	text-align: left;
+	width: 15px;
+}
+.ewt-circle:before{
+	content: "\25cf";
+}
+
+/* about EasyWPTranslator metabox */
+#ewt-about-box p,
+#ewt-recommended p {
+	text-align: justify;
+}
+
+#ewt-about-box input {
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+/* strings translation table */
+.stringstranslations .column-name,
+.stringstranslations .column-context {
+	width: 10%;
+}
+
+.stringstranslations .column-string {
+	width: 33%;
+}
+
+.translation label {
+	display: inline-block;
+	width: 23%;
+	vertical-align: top;
+}
+
+.translation {
+	display: flex; /* fix #691 to remove default margin bottom */
+}
+@media screen and (max-width: 782px) { /* reset default display property for small device */
+	.translation{
+		display: block;
+	}
+}
+.translation textarea{
+	display: block; /* fix #691 to remove default margin bottom */
+}
+.translation input,
+.translation textarea {
+	width: 72%;
+	box-sizing: border-box; /* to be sure field don't overrun outside their wrapper */
+	margin-bottom: 4px; /* fix #691 set the same margin bottom for both textarea and input tags */
+}
+
+/* settings */
+.ewt-settings {
+	margin-top: 20px;
+}
+
+.ewt-settings .plugin-title {
+	width: 25%;
+}
+
+#wpbody-content .ewt-settings .ewt-configure tr {
+	display: table-row;
+}
+
+#wpbody-content .ewt-settings .ewt-configure td {
+	display: table-cell;
+}
+
+#wpbody-content .ewt-settings .ewt-configure > td {
+	padding: 20px 20px 20px 40px;
+}
+
+.ewt-configure legend {
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 0.5em;
+}
+
+.ewt-configure td .description {
+	margin-top: 2px;
+	margin-bottom: 0.5em;
+}
+
+.ewt-configure p.submit {
+	margin-top: 20px;
+}
+
+.ewt-configure .button {
+	margin-right: 20px;
+}
+
+.ewt-configure fieldset {
+	margin-bottom: 1.5em;
+}
+
+.ewt-inline-block-list {
+	margin: 0;
+}
+
+.ewt-inline-block-list li {
+	display: inline-block;
+	margin: 0;
+	width: 250px;
+}
+
+/* settings URL modifications */
+#ewt-domains-table td {
+	padding: 2px 2px 2px 1.5em;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+}
+
+.ewt-settings-url-col {
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+}
+
+/* settings Activation keys */
+.ewt-table-top td {
+	vertical-align: top;
+}
+
+#ewt-licenses-table label {
+	font-size: 1em;
+	font-weight: 600;
+}
+
+.ewt-configure .ewt-deactivate-license {
+	margin: 0 0 0 20px;
+}
+
+/* language columns in edit.php and edit-tags.php */
+.wp-list-table th[class*='column-language_'],
+.wp-list-table td[class*='column-language_'] {
+	width: 1.5em;
+	box-sizing: content-box; /* Override ACF 5.9.0 styles */
+}
+
+/* Text direction in post.php and edit-tags.php */
+.ewt-dir-rtl textarea,
+.ewt-dir-rtl input[type="text"] {
+	direction: rtl;
+}
+
+.ewt-dir-ltr textarea,
+.ewt-dir-ltr input[type="text"] {
+	direction: ltr;
+}
+
+.ewt-dir-ltr .tr_lang,
+.ewt-dir-rtl .tr_lang {
+	direction: inherit;
+}
+
+/* languages metabox in post.php */
+#ml_box p {
+	margin-top: 1em;
+}
+
+#post-translations p {
+	float: left;
+	margin-top: 1em;
+}
+
+.rtl #post-translations p {
+	float: right;
+}
+
+#post-translations table {
+	table-layout: fixed;
+	width: 100%;
+	clear: both;
+}
+
+#post-translations a {
+	text-decoration: none;
+}
+
+#post-translations .ewt-language-column,
+#post-translations .ewt-column-icon {
+	width: 20px;
+}
+
+#post-translations .tr_lang {
+	width: 100%;
+}
+
+#post-translations td {
+	padding: 2px;
+}
+
+#post-translations .spinner,
+#term-translations .spinner {
+	float: none;
+	margin: 0;
+	background-position: center;
+	width: auto;
+}
+
+#select-post-language .ewt-select-flag {
+	padding: 4px;
+	margin-right: 10px;
+}
+
+.rtl #select-post-language .ewt-select-flag {
+    padding: 4px;
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+/* specific cases for media */
+#select-media-language .ewt-select-flag {
+	padding: 4px;
+	margin-right: 10px;
+}
+
+.ewt-media-edit-column {
+	float: right;
+}
+
+/* language and translations in edit-tags.php */
+.ewt-translation-flag { /* also for media */
+	margin-right: 14px;
+}
+
+#select-add-term-language .ewt-select-flag {
+	padding: 11px;
+	margin-right: 13px;
+}
+
+#select-edit-term-language .ewt-select-flag {
+	padding: 11px;
+	margin-right: 4px;
+}
+
+#term-translations p {
+	/* same style as label */
+	font-weight: 400;
+	font-style: normal;
+	padding: 2px;
+	color: #23282d;
+}
+
+#add-term-translations,
+#edit-term-translations {
+	width: 95%;
+}
+
+#term-translations .ewt-language-column {
+	line-height: 28px;
+	width: 20%;
+}
+
+#term-translations .ewt-edit-column,
+#add-term-translations .ewt-language-column {
+	width: 20px;
+}
+
+#edit-term-translations .ewt-language-column {
+	padding: 15px 10px;
+	font-weight: normal;
+}
+
+/* icon fonts */
+.ewt_icon_add:before {
+	content: "\f132";
+}
+
+.ewt_icon_edit:before {
+	content: "\f464";
+}
+
+[class^="ewt_icon_"] {
+	font: 20px/1 'dashicons';
+	vertical-align: middle;
+}
+
+/* admin bar */
+#wpadminbar #wp-admin-bar-languages .ab-item img {
+	margin: 0 8px 0 2px;
+}
+
+#wpadminbar #wp-admin-bar-languages #wp-admin-bar-all .ab-item .ab-icon {
+	float: none;
+	top: 4px;
+}
+
+#wpadminbar #wp-admin-bar-languages .ab-icon:before {
+	content: "\f326";
+	top: 1px;
+}
+
+#wp-admin-bar-languages.ewt-filtered-languages {
+	background: #a03f3f;
+}
+
+#wpadminbar #wp-admin-bar-languages.ewt-filtered-languages span.ab-label{ /* Enforce white color for WordPress admin light theme. */
+		color: #fff;
+}
+
+/* Notices */
+.ewt-notice.notice {
+	padding-right: 38px;
+	position: relative;
+}
+
+.ewt-notice a.notice-dismiss {
+	text-decoration: none;
+}
+
+.ewt-notice .button {
+	margin-right: 10px;
+}
+
+@media screen and ( max-width: 782px ) {
+	/* settings */
+	#wpbody-content .ewt-settings .ewt-configure > td {
+		padding: 20px;
+	}
+
+	#wpbody-content .ewt-settings #cb {
+		padding: 20px 9px;
+	}
+
+	/* settings URL modifications */
+	.ewt-inline-block {
+		width: auto;
+	}
+
+	.ewt-settings-url-col {
+		display: block;
+		width: 100%;
+	}
+
+	/* settings licenses */
+	#wpbody-content .ewt-settings #ewt-licenses-table td {
+		display: block;
+	}
+
+	.ewt-configure .ewt-deactivate-license {
+		margin: 10px 0 5px;
+	}
+
+	/* strings translations table */
+	.translation label {
+		display: block;
+		width: 95%;
+		padding-left: 0;
+	}
+
+	.translation input,
+	.translation textarea {
+		width: 95%;
+	}
+
+	/* hide selected language flag and translations language name */
+	#select-add-term-language .ewt-select-flag,
+	#select-edit-term-language .ewt-select-flag,
+	#edit-term-translations .ewt-language-name {
+		display: none;
+	}
+
+	#edit-term-translations {
+		width: 100%;
+	}
+
+	#add-term-translations .ewt-language-column {
+		line-height: 38px;
+	}
+
+	#edit-term-translations td {
+		padding: 8px 10px;
+	}
+
+	#edit-term-translations .ewt-language-column,
+	#edit-term-translations .ewt-edit-column {
+		width: 20px;
+	}
+
+	/* translations tables should be kept as table */
+	.term-translations .ewt-language-column,
+	.term-translations .ewt-edit-column,
+	.term-translations .ewt-translation-column {
+		display: table-cell;
+	}
+
+	.term-translations .hidden {
+		display: none;
+	}
+
+	/* admin bar */
+	#wpadminbar #wp-admin-bar-languages {
+		display: block; /*shows our menu on mobile devices */
+	}
+
+	#wpadminbar #wp-admin-bar-languages > .ab-item {
+		width: 50px;
+		text-align: center;
+	}
+
+	#wpadminbar #wp-admin-bar-languages > .ab-item .ab-icon:before {
+		font: 32px/1 'dashicons';
+		top: -1px;
+	}
+
+	#wpadminbar #wp-admin-bar-languages > .ab-item img {
+		margin: 19px 0;
+	}
+
+	#wpadminbar #wp-admin-bar-languages #wp-admin-bar-all .ab-item .ab-icon {
+		margin-right: 6px;
+		font-size: 20px !important;
+		line-height: 20px !important;
+	}
+}
