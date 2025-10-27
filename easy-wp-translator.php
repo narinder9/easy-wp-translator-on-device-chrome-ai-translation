@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Easy WP Translator – On-Device Chrome AI Translation
- * Plugin URI:        https://github.com/CoolPluginsTeam/easywptranslator-chromeai-translations
+ * Plugin URI:        https://github.com/narinder9/easy-wp-translator-on-device-chrome-ai-translation
  * Description:       Create a multilingual WordPress website in minutes with Easy WP Translator – On-Device Chrome AI Translation.
  * Version:           0.0.1
  * Requires at least: 6.2

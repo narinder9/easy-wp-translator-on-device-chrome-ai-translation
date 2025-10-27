@@ -25,16 +25,15 @@ You can translate:
 
 * Posts, Pages , Menus , Categories , Media details (alt text)
 
+* No Monthly Cost
 
- **No Monthly Cost**
+*  No External API
 
- **No External API**
-
- **No Coding Needed**
+* No Coding Needed
 
 This plugin uses Free Chrome’s **On-Device AI (Translator API)** — so translation happens inside the user’s browser. Data never leaves the device.
 
----
+
 
 ##  Why Use Easy WP Translator?
 
@@ -44,7 +43,7 @@ This plugin uses Free Chrome’s **On-Device AI (Translator API)** — so transl
 * **Fast, Secure & Private** – No data is sent to servers.
 * **No SaaS Lock-In** – Once installed, it’s fully yours.
 
----
+
 
 ##  How We Built It
 
@@ -61,34 +60,26 @@ Everything happens *locally in the browser*:
 2. Click **Bulk Translate**
 3. Choose languages
 4. Your website becomes multilingual instantly
+## Challenges We Faced
 
----
+### 1. AI Could Not Understand Context
 
-##  Challenges We Faced
+Chrome’s Translator API does not support adding **extra instructions or context**, so sometimes the translation was not correct for special words, industry terms, or brand tone.
 
-### 1. No Website Context for AI
+### 2. HTML Formatting Got Mixed Up
 
-Chrome AI didn’t support **custom context**, so industry-specific wording sometimes lacked accuracy.
+While translating text with HTML tags, some tags got removed or changed by the AI.
+We added extra logic to protect the important tags so the translated content keeps the right format and looks neat.
 
-### 2. HTML Formatting Issues
+### 3. Language Settings Were Hard for New Users
 
-During translation, some HTML tags were affected.
-We added logic to **protect important tags and layout**.
-
-### 3. Chrome Language Settings Were Hard for Users
-
-Users struggled to set language preferences because Chrome doesn’t allow direct linking to internal settings pages.
-We improved UI instructions and added step-by-step support.
-
----
-
-##  Accomplishments
+Many users found it difficult to change or set language settings in Chrome.
+Because we cannot directly link to Chrome settings pages, we had to guide users step-by-step and provide simple instructions inside the tool.
 
 * Made website translation **easy for non-technical users**
 * Fully **free and privacy-friendly** multilingual solution
 * No dependency on external servers or paid APIs
 
----
 
 ##  What We Learned
 
@@ -98,7 +89,6 @@ We improved UI instructions and added step-by-step support.
 
 This helped us build a smooth workflow that feels natural.
 
----
 
 ##  Installation
 
@@ -127,7 +117,7 @@ This plugin uses AI translation powered by Chrome’s built-in AI.
 * [Chrome Translator API Documentation](https://developer.chrome.com/docs/ai/translator-api)
 
 
----
+
 
 ##  What’s Next
 
