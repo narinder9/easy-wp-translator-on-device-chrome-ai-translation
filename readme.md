@@ -4,6 +4,8 @@
 Translate your WordPress website into multiple languages using **free On-Device Chrome AI translation**.
 No server calls, no API cost, no SaaS subscription — completely free and fast.
 
+![Easy WP Translator](https://res.cloudinary.com/cooltimeline/image/upload/v1761653758/Easy_WP_Translator_Thumbnail_ama1dm.gif)
+
 # Inspiration 
 Creating a multilingual website sounds exciting, but in real life, it’s often **confusing, costly, and time-consuming**. Many people use paid translation services or complicated plugins that need setup, subscriptions, and send website content to third-party servers.
 
@@ -20,39 +22,36 @@ With translation running directly inside the browser, it’s now **super fast, f
 * **No SaaS Lock-In** – Once installed, it’s fully yours
 
 
-###  Try the Live Demo
+### Testing Workflow
 
-You can login using the credentials below to explore the plugin in action:
+1. Open the **Pages** or **Posts** section in your WordPress dashboard.
+2. Select the pages or posts you want to translate.
+3. Click the **Bulk Translate** button.
+4. Choose the target languages and click **Translate**.
+5. If any Chrome AI configuration is missing, an error message will appear.
+6. Click the **Error Details** button and **follow the steps shown in the Chrome popup** to enable translation settings.
 
- [**Check Live Preview**](https://easy-wp-translator.instawp.co/wp-admin)
+   > (These errors depend on your Google Chrome configuration.)
 
-**Username:**- demo
+7. **Download the required language pack** in your Chrome browser and **reload the page**.
+8. Click the **Translate** button again.
+9. That’s it! Your website content will now be translated instantly, making your site multilingual within seconds.
 
-**Password:**- demo@123
+For more details, you can check the screenshots or watch the demo video to see the full translation workflow in action.
 
-
-
-###   Testing Workflow
-
-1. Open any **page or post** in your WordPress dashboard.
-2. Click the **Bulk Translate** button.
-3. Select the languages you want to translate into.
-4. If prompted, **follow the steps shown in the Chrome popup** to enable translation settings.
-5. **Download the required language pack** in your Chrome browser and **reload the page**.
-6. Click the **Translate** button again.
-7. That’s it! Your website content will now be translated instantly and become multilingual within seconds.
 
 
 ## Installation
 
-1. Log in to your WordPress Dashboard
-2. Go to **Plugins → Add New**
-3. Search for **Easy WP Translator**
-4. Install & Activate
+1. Log in to your **WordPress Dashboard**.
+2. Go to **Plugins → Add New → Upload Plugin**.
+3. Click **Choose File** and select the **Easy WP Translator ZIP file** shared with you.
+4. Click **Install Now**, then **Activate** the plugin.
+5. Once activated, follow the on-screen setup steps to start translating your website.
 
 ### Setup Wizard Steps
 
-After activation:
+on-screen setup:
 
 1. Select your main (default) language
 2. Choose additional languages to support e.g (fr,It)
