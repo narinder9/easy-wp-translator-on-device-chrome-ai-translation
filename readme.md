@@ -2,128 +2,76 @@
 # Easy WP Translator – On-Device Chrome AI Translation
 
 Translate your WordPress website into multiple languages using **free On-Device Chrome AI translation**.
-No server calls, no API cost, no SaaS subscription — completely private and fast.
+No server calls, no API cost, no SaaS subscription — completely free and fast.
+
+# Inspiration 
+Creating a multilingual website sounds exciting, but in real life, it’s often **confusing, costly, and time-consuming**. Many people use paid translation services or complicated plugins that need setup, subscriptions, and send website content to third-party servers.
+
+When Chrome introduced **on-device AI**, we saw the perfect opportunity to fix all of this.
+With translation running directly inside the browser, it’s now **super fast, fully private, and completely free**.
 
 
-##  Inspiration
+## Why Use Easy WP Translator?
 
-Building a multilingual website sounds exciting, but in reality, it is often **confusing, expensive, and time-consuming**. Many people rely on paid translation APIs or complicated plugins that send content to third-party servers.
+* **Free AI Translations** – Uses Chrome AI for free; no paid credits needed
+* **Familiar WordPress UI** – Easy to use for beginners
+* **Works with Elementor & Gutenberg** – Fully compatible with popular page builders
+* **Fast, Secure & Private** – No data is sent to external servers
+* **No SaaS Lock-In** – Once installed, it’s fully yours
 
-Our goal was very simple: **Why is not website translation easy, free, and accessible for everyone?**
 
-When Chrome introduced free **on-device AI**, we saw the **perfect opportunity** to change that. It finally made it possible to offer translations that are:
+###  Try the Live Demo
 
-* Free to use
-* Private and secure
-* Simple for anyone
+You can login using the credentials below to explore the plugin in action:
 
-##  What This Plugin Does
+ [**Check Live Preview**](https://easy-wp-translator.instawp.co/wp-admin)
 
-**Easy WP Translator** helps you translate your WordPress content into different languages directly from your dashboard.
+**Username:**- demo
 
-You can translate:
-
-* Posts, Pages , Menus , Categories , Media details (alt text)
-
-* No Monthly Cost
-
-*  No External API
-
-* No Coding Needed
-
-This plugin uses Free Chrome’s **On-Device AI (Translator API)** — so translation happens inside the user’s browser. Data never leaves the device.
+**Password:**- demo@123
 
 
 
-##  Why Use Easy WP Translator?
+###   Testing Workflow
 
-* **Free AI Translations** – Uses Chrome AI for free, no paid credits required.
-* **Familiar WordPress UI** – Easy to use for beginners.
-* **Works with Elementor & Gutenberg** – Fully compatible with famous page builders
-* **Fast, Secure & Private** – No data is sent to servers.
-* **No SaaS Lock-In** – Once installed, it’s fully yours.
-
-
-
-##  How We Built It
-
-We built this plugin using **Chrome’s built-in On-Device AI** (Translator API).
-Everything happens *locally in the browser*:
-
-*  No server involved
-*  No API calls
-*  No data sharing
-
-### Simple Workflow
-
-1. Open pages or posts
-2. Click **Bulk Translate**
-3. Choose languages
-4. Your website becomes multilingual instantly
-## Challenges We Faced
-
-### 1. AI Could Not Understand Context
-
-Chrome’s Translator API does not support adding **extra instructions or context**, so sometimes the translation was not correct for special words, industry terms, or brand tone.
-
-### 2. HTML Formatting Got Mixed Up
-
-While translating text with HTML tags, some tags got removed or changed by the AI.
-We added extra logic to protect the important tags so the translated content keeps the right format and looks neat.
-
-### 3. Language Settings Were Hard for New Users
-
-Many users found it difficult to change or set language settings in Chrome.
-Because we cannot directly link to Chrome settings pages, we had to guide users step-by-step and provide simple instructions inside the tool.
-
-* Made website translation **easy for non-technical users**
-* Fully **free and privacy-friendly** multilingual solution
-* No dependency on external servers or paid APIs
+1. Open any **page or post** in your WordPress dashboard.
+2. Click the **Bulk Translate** button.
+3. Select the languages you want to translate into.
+4. If prompted, **follow the steps shown in the Chrome popup** to enable translation settings.
+5. **Download the required language pack** in your Chrome browser and **reload the page**.
+6. Click the **Translate** button again.
+7. That’s it! Your website content will now be translated instantly and become multilingual within seconds.
 
 
-##  What We Learned
-
-* On-Device AI is **fast and secure** for translations
-* Users love **simple UI with fewer steps**
-* Most users skip documentation — so product must be self-explaining
-
-This helped us build a smooth workflow that feels natural.
-
-
-##  Installation
+## Installation
 
 1. Log in to your WordPress Dashboard
 2. Go to **Plugins → Add New**
-3. Search: **Easy WP Translator**
+3. Search for **Easy WP Translator**
 4. Install & Activate
 
-###  Setup Wizard Steps
+### Setup Wizard Steps
 
 After activation:
 
 1. Select your main (default) language
-2. Choose additional languages to support
+2. Choose additional languages to support e.g (fr,It)
 3. Decide URL structure (`/fr/`, `?lang=fr`, etc.)
-4. Enable automatic translation for Media details
-5. Choose translation engine:  **Chrome On-Device AI**
- 
-6. Enable Language Switcher and choose its display style
+4. Choose translation engine: **Chrome On-Device AI**
+5. Enable the Language Switcher and select its display style
 
-##  AI Service Provider
+## Google Chrome’s built-in AI API used
 
-This plugin uses AI translation powered by Chrome’s built-in AI.
+This plugin uses translation powered by Chrome’s built-in AI.
 
 * [Chrome Built-in AI APIs Documentation](https://developer.chrome.com/docs/ai/built-in-apis)
 * [Chrome Translator API Documentation](https://developer.chrome.com/docs/ai/translator-api)
 
+## About this project
+
+The **Easy WP Translator – On-Device Chrome AI Translation** WordPress Plugin is a experimental project by Narinder, Vishali and is a submission for the [Google Chrome Built-in AI Challenge](https://googlechromeai.devpost.com/).  
+
+**It is an experimental project and should not be used in production environments**
 
 
-
-##  What’s Next
-
-We will continue improving this plugin. Next features:
-
-* **Better HTML/Formatting Protection**
-* **Simplified Onboarding with Visual Hints**
-* **Support for Dynamic Elements:** AJAX content, popups, SPA sections, forms, menus
 
