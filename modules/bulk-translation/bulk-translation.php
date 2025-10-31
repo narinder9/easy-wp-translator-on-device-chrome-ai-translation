@@ -174,8 +174,16 @@ if ( ! class_exists( 'EWT_Bulk_Translation' ) ) :
         $languages = EWT()->model->get_languages_list();
 
         $lang_object = array();
+
+		$default_language=EWT()->model->get_default_language();
+		$default_language_slug=false;
+
+		if(isset($default_language->slug) && !empty($default_language->slug)){
+			$default_language_slug=$default_language->slug;
+		}
+
         foreach ($languages as $lang) {
-            $lang_object[$lang->slug] = array('name' => $lang->name, 'flag' => $lang->flag_url, 'locale' => $lang->locale);
+			$lang_object[$lang->slug] = array('name' => $lang->name, 'flag' => $lang->flag_url, 'locale' => $lang->locale);
         }
 
 		$providers=array();
@@ -225,6 +233,7 @@ if ( ! class_exists( 'EWT_Bulk_Translation' ) ) :
                 'slug_translation_option' => $slug_translation_option,
                 'taxonomy_page' => $taxonomy_page,
 				'providers'                => $active_providers,
+				'default_language_slug' => $default_language_slug,
             ), $extra_data)
         );
 		}

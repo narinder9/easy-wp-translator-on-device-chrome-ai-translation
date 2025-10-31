@@ -25,7 +25,7 @@ const ewtElementorConfirmBox = {
                 ${__("Translate with Elementor", "autopoly-ai-translation-for-polylang-pro")}
                 </button>
                 <button data-value="no">
-                ${__("Edit with Gutenberg", "autopoly-ai-translation-for-polylang-pro")}
+                ${__("Edit with Default Editor", "autopoly-ai-translation-for-polylang-pro")}
                 </button>
             </div>
             </div>
